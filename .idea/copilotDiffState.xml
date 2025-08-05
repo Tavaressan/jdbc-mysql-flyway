@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/docker-compose.yml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/docker-compose.yml" />
+              <option name="originalContent" value="version: 'version'&#10;&#10;services:&#10;  db:&#10;    image: mysql:latest&#10;    environment:&#10;      MYSQL_ROOT_PASSWORD: root&#10;      MYSQL_USER: jdbc-sample&#10;      MYSQL_PASSWORD: jdbc-sample&#10;      MYSQL_DATABASE: jdbc-sample&#10;    ports:&#10;      - &quot;3307:3306&quot;&#10;" />
+              <option name="updatedContent" value="version: '3.8'&#10;&#10;services:&#10;  db:&#10;    image: mysql:latest&#10;    environment:&#10;      MYSQL_ROOT_PASSWORD: root&#10;      MYSQL_USER: jdbc-sample&#10;      MYSQL_PASSWORD: jdbc-sample&#10;      MYSQL_DATABASE: jdbc-sample&#10;    ports:&#10;      - &quot;3307:3306&quot;&#10;    healthcheck:&#10;      test: [&quot;CMD&quot;, &quot;mysqladmin&quot;, &quot;ping&quot;, &quot;-h&quot;, &quot;localhost&quot;]&#10;      timeout: 5s&#10;      retries: 10" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/br/com/dio/persistence/entity/ConnectionUtil.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/main/java/br/com/dio/persistence/entity/ConnectionUtil.java" />
+              <option name="originalContent" value="package br.com.dio.persistence.entity;&#10;&#10;import lombok.NoArgsConstructor;&#10;&#10;import java.sql.Connection;&#10;import java.sql.DriverManager;&#10;import java.sql.SQLException;&#10;&#10;import static lombok.AccessLevel.PRIVATE;&#10;&#10;@NoArgsConstructor(access = PRIVATE)&#10;public class ConnectionUtil {&#10;&#10;    public static Connection getConnection() throws SQLException {&#10;        return DriverManager.getConnection(&quot;jdbc:mysql://localhost:3307/jdbc-sample&quot;,&quot;jdbc-sample&quot;,&quot;jdbc-sample&quot;);&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package br.com.dio.persistence.entity;&#10;&#10;import lombok.NoArgsConstructor;&#10;&#10;import java.sql.Connection;&#10;import java.sql.DriverManager;&#10;import java.sql.SQLException;&#10;&#10;import static lombok.AccessLevel.PRIVATE;&#10;&#10;@NoArgsConstructor(access = PRIVATE)&#10;public class ConnectionUtil {&#10;&#10;    private static final String URL = &quot;jdbc:mysql://localhost:3307/jdbc-sample&quot;;&#10;    private static final String USER = &quot;root&quot;;&#10;    private static final String PASSWORD = &quot;root&quot;;&#10;&#10;    public static Connection getConnection() throws SQLException {&#10;        return DriverManager.getConnection(URL, USER, PASSWORD);&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/br/com/dio/persistence/entity/EmployeeDAO.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/main/java/br/com/dio/persistence/entity/EmployeeDAO.java" />
+              <option name="originalContent" value="package br.com.dio.persistence.entity;&#10;&#10;import br.com.dio.persistence.entity.EmployeeEntity;&#10;&#10;import java.util.List;&#10;&#10;public class EmployeeDAO {&#10;&#10;    public void insert(final EmployeeEntity entity){&#10;&#10;    }&#10;&#10;    public void update(final EmployeeEntity entity){&#10;&#10;    }&#10;&#10;    public void delete(final long id){&#10;&#10;    }&#10;&#10;    public List&lt;EmployeeEntity&gt; findAll(){&#10;        return null;&#10;    }&#10;    public EmployeeEntity findById(final long id){&#10;        return null;&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package br.com.dio.persistence.entity;&#10;&#10;import br.com.dio.persistence.entity.EmployeeEntity;&#10;&#10;import java.util.List;&#10;&#10;public class EmployeeDAO {&#10;&#10;    public void insert(final EmployeeEntity entity){&#10;&#10;    }&#10;&#10;    public void update(final EmployeeEntity entity){&#10;&#10;    }&#10;&#10;    public void delete(final long id){&#10;&#10;    }&#10;&#10;    public List&lt;EmployeeEntity&gt; findAll(){&#10;        return null;&#10;    }&#10;    public EmployeeEntity findById(final long id){&#10;        return null;&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
