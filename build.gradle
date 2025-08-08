@@ -27,6 +27,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.30'
     runtimeOnly 'com.mysql:mysql-connector-j:8.2.0'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    implementation 'net.datafaker:datafaker:2.2.2'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'

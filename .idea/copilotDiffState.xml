@@ -3,15 +3,6 @@
   <component name="CopilotDiffPersistence">
     <option name="pendingDiffs">
       <map>
-        <entry key="$PROJECT_DIR$/docker-compose.yml">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/docker-compose.yml" />
-              <option name="originalContent" value="version: 'version'&#10;&#10;services:&#10;  db:&#10;    image: mysql:latest&#10;    environment:&#10;      MYSQL_ROOT_PASSWORD: root&#10;      MYSQL_USER: jdbc-sample&#10;      MYSQL_PASSWORD: jdbc-sample&#10;      MYSQL_DATABASE: jdbc-sample&#10;    ports:&#10;      - &quot;3307:3306&quot;&#10;" />
-              <option name="updatedContent" value="version: '3.8'&#10;&#10;services:&#10;  db:&#10;    image: mysql:latest&#10;    environment:&#10;      MYSQL_ROOT_PASSWORD: root&#10;      MYSQL_USER: jdbc-sample&#10;      MYSQL_PASSWORD: jdbc-sample&#10;      MYSQL_DATABASE: jdbc-sample&#10;    ports:&#10;      - &quot;3307:3306&quot;&#10;    healthcheck:&#10;      test: [&quot;CMD&quot;, &quot;mysqladmin&quot;, &quot;ping&quot;, &quot;-h&quot;, &quot;localhost&quot;]&#10;      timeout: 5s&#10;      retries: 10" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/br/com/dio/persistence/entity/ConnectionUtil.java">
           <value>
             <PendingDiffInfo>

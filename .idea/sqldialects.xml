@@ -5,6 +5,11 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508021401__create_employee_table.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508041409__create_employees_audit_table.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508041800__add_employee_id_in_employee_audit.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508041800__create_trigger_insert_employee.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508041826__create_trigger_insert_employee.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508051115__create_trigger_update_employee.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508051120__create_trigger_delete_employee.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508072023__create_module_table.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508072025__create_accesses_table.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V202508081222__add_access_operation_in_access_table.sql" dialect="MySQL" />
   </component>
 </project>
